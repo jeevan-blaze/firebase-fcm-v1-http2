@@ -24,18 +24,21 @@ Supported features:
 Then, start using the package by importing and instantiating it:
 
 ```js
-const { FirebaseClient } = require('firebase-fcm-v1-http2');
+const { Client } = require('firebase-fcm-v1-http2');
 
 // Initialize Firebase Client
-const firebaseClient = new FirebaseClient({
+const firebaseClient = new Client({
   serviceAccount: require('./path/to/serviceAccountKey.json'),
   // Add optional configurations here
 });
 
 // Send a notification to multiple devices
 const message = {
-  title: 'Hello from Firebase',
-  body: 'This is a test notification.'
+  notification: {
+    title: "Test Notification",
+    body: "This is a test message"
+  },
+  data: {}
 };
 
 const tokens = ['device_token_1', 'device_token_2'];
