@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variable files
+.env
+.env.test
+.env.production
+
+# Typescript
+*.tsbuildinfo
+
+# IntelliJ IDEA
+.idea/
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Linux
+*~
