@@ -19,13 +19,6 @@ Supported features:
 - [X] Token batching support
 - [X] Uninstall detection
 - [X] Retry mechanism
-
-## Usage
-
-First, install the package using npm:
-
-```shell
-npm install fcm-v1-http2 --save
 ```
 
 Then, start using the package by importing and instantiating it:
