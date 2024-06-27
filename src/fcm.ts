@@ -91,7 +91,8 @@ function sendRequest(
             }
 
             if (response.error) {
-                if (response.error.details && response.error.details[0].errorCode === 'UNREGISTERED') {
+                if ((response.error.details && response.error.details[0].errorCode === 'UNREGISTERED') ||
+                (response.error.code === 400 && response.error.status === 'INVALID_ARGUMENT')) {
                     client.unregisteredTokens.push(device);
                 } else {
                     return doneCallback(response.error);
